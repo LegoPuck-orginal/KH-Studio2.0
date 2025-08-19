@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klehausen Studio - Social Media & Content Produktion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Klehausen Studio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Über uns</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <button class="dark-mode-toggle" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Wir bringen eure <span class="highlight">Vision</span> zum Leben</h1>
+                <p class="hero-description">Professionelle Content-Produktion und Social Media Marketing für kleine Unternehmen und ehrenamtliche Projekte. Von der Idee bis zur Umsetzung - wir machen euren Content unvergesslich.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Projekt starten</a>
+                    <a href="#portfolio" class="btn btn-secondary">Portfolio ansehen</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Video Content</h3>
+                </div>
+                <div class="hero-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Fotografie</h3>
+                </div>
+                <div class="hero-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Social Media</h3>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unsere Services</h2>
+                <p>Von der Konzeption bis zur finalen Umsetzung - wir bieten alles aus einer Hand</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Produktion</h3>
+                    <p>Professionelle Videoproduktion mit Drohnenaufnahmen, Interviews und Storytelling für maximale Reichweite.</p>
+                    <ul class="service-features">
+                        <li>Drohnenaufnahmen</li>
+                        <li>Werbevideos</li>
+                        <li>Social Media Content</li>
+                        <li>Event-Dokumentation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Fotografie</h3>
+                    <p>Hochwertige Fotografie für euer Business - von Produktfotos bis hin zu professionellen Portraits.</p>
+                    <ul class="service-features">
+                        <li>Produktfotografie</li>
+                        <li>Business Portraits</li>
+                        <li>Event Fotografie</li>
+                        <li>Social Media Bilder</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Strategische Planung und Umsetzung eurer Social Media Präsenz für maximale Sichtbarkeit.</p>
+                    <ul class="service-features">
+                        <li>Content Strategie</li>
+                        <li>Community Management</li>
+                        <li>Paid Advertising</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Grafikdesign</h3>
+                    <p>Kreative Designs die im Gedächtnis bleiben - von Logos bis hin zu kompletten Corporate Designs.</p>
+                    <ul class="service-features">
+                        <li>Logo Design</li>
+                        <li>Corporate Identity</li>
+                        <li>Print Design</li>
+                        <li>Digital Graphics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unsere Arbeit</h2>
+                <p>Entdeckt einige unserer besten Projekte und lasst euch inspirieren</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="video">Video</button>
+                <button class="filter-btn" data-filter="photo">Fotografie</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Produktvideo - Local Business</h3>
+                        <p>Emotionales Storytelling für ein lokales Unternehmen</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="photo">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Event Fotografie</h3>
+                        <p>Professionelle Dokumentation eines Charity Events</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Social Media Kampagne</h3>
+                        <p>Erfolgreiche Instagram Kampagne mit 200% Reichweiten-Steigerung</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-helicopter"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Drohnenaufnahmen</h3>
+                        <p>Spektakuläre Luftaufnahmen für Immobilien-Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Über Klehausen Studio</h2>
+                    <p>Wir sind ein junges, kreatives Team mit einer Leidenschaft für außergewöhnlichen Content. Unser Ziel ist es, kleinen Unternehmen und ehrenamtlichen Projekten zu helfen, ihre Geschichte zu erzählen und ihre Reichweite zu maximieren.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projekte realisiert</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Jahre Erfahrung</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Kundenzufriedenheit</p>
+                        </div>
+                    </div>
+                    <div class="team-values">
+                        <div class="value">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Innovation</h4>
+                            <p>Wir nutzen modernste Technologie und kreative Ansätze</p>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-heart"></i>
+                            <h4>Leidenschaft</h4>
+                            <p>Jedes Projekt wird mit Herzblut und Hingabe umgesetzt</p>
+                        </div>
+                        <div class="value">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Partnership</h4>
+                            <p>Wir arbeiten eng mit unseren Kunden zusammen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Das Klehausen Studio Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lass uns dein Projekt besprechen</h2>
+                <p>Bereit für außergewöhnlichen Content? Kontaktiere uns für ein unverbindliches Beratungsgespräch!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-Mail</h4>
+                            <p>hello@klehausen-studio.de</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+49 (0) 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Standort</h4>
+                            <p>Deutschland</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">E-Mail</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Betreff</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Nachricht</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Klehausen Studio</h3>
+                    <p>Professionelle Content-Produktion für kleine Unternehmen und ehrenamtliche Projekte.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Video Produktion</a></li>
+                            <li><a href="#services">Fotografie</a></li>
+                            <li><a href="#services">Social Media</a></li>
+                            <li><a href="#services">Grafikdesign</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Unternehmen</h4>
+                        <ul>
+                            <li><a href="#about">Über uns</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#" onclick="openAGBModal()">AGB</a></li>
+                            <li><a href="#">Datenschutz</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Klehausen Studio. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AGB Modal -->
+    <div id="agbModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Allgemeine Geschäftsbedingungen</h2>
+                <span class="close" onclick="closeAGBModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h3>1. Geltungsbereich</h3>
+                <p>Diese Allgemeinen Geschäftsbedingungen gelten für alle Aufträge und Leistungen von Klehausen Studio.</p>
+                
+                <h3>2. Vertragsschluss</h3>
+                <p>Ein Vertrag kommt durch schriftliche Auftragsbestätigung oder Beginn der Arbeiten zustande.</p>
+                
+                <h3>3. Leistungen</h3>
+                <p>Wir bieten professionelle Content-Produktion, Fotografie, Videoproduktion und Social Media Marketing.</p>
+                
+                <h3>4. Preise und Zahlungsbedingungen</h3>
+                <p>Alle Preise verstehen sich zzgl. der gesetzlichen Mehrwertsteuer. Zahlung ist binnen 14 Tagen nach Rechnungsstellung fällig.</p>
+                
+                <h3>5. Urheberrecht</h3>
+                <p>Alle erstellten Inhalte unterliegen dem Urheberrecht. Die Nutzungsrechte werden nach Zahlungseingang übertragen.</p>
+                
+                <h3>6. Haftung</h3>
+                <p>Die Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt.</p>
+                
+                <h3>7. Schlussbestimmungen</h3>
+                <p>Es gilt deutsches Recht. Gerichtsstand ist unser Geschäftssitz.</p>
+                
+                <p class="modal-footer-text">Stand: August 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
